@@ -825,12 +825,12 @@ The mission is to build intelligent healthcare systems that empower people and i
         import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
         const firebaseConfig = {
-            apiKey: "YOUR_FIREBASE_API_KEY",
-            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_PROJECT_ID.appspot.com",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_FIREBASE_APP_ID"
+            apiKey: "AIzaSyDN6r0h4cbPPqLOHOn-QhimV27XAcQMhxU",
+            authDomain: "uv-labs.firebaseapp.com",
+            projectId: "uv-labs",
+            storageBucket: "uv-labs.firebasestorage.app",
+            messagingSenderId: "514988606820",
+            appId: "1:514988606820:web:07aff6873a65481d57a671"
         };
 
         const form = document.getElementById("registrationForm");
@@ -838,8 +838,8 @@ The mission is to build intelligent healthcare systems that empower people and i
         let db = null;
 
         try {
-            if (firebaseConfig.apiKey !== "YOUR_FIREBASE_API_KEY" &&
-                firebaseConfig.projectId !== "YOUR_PROJECT_ID") {
+            if (firebaseConfig.apiKey !== "AIzaSyDN6r0h4cbPPqLOHOn-QhimV27XAcQMhxU" &&
+                firebaseConfig.projectId !== "uv-labs") {
                 const app = initializeApp(firebaseConfig);
                 db = getFirestore(app);
             }
